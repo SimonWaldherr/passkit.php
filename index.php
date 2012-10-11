@@ -61,11 +61,16 @@ if($_POST['time'] != '')
     input, select{
       width: 220px;
     }
+    h1{
+      width: 185px;
+      font-family: "Hoefler Text", Constantia, Palatino, Georgia, serif;
+      margin: auto;
+    }
   </style>
-  
 </head>
 <body>
-  
+  <h1>passkit.php</h1>
+  <p>select a example and press the submit button to generate a pass</p>
   <form action="./" method="post">
     <select id="aexample" name="aexample" size="6">
       <option value="false" selected="selected">random</option>
@@ -79,6 +84,19 @@ if($_POST['time'] != '')
     <input style="display:none;" name="time" id="time" type="text" value="<?php echo time(); ?>">
     <input type="submit" value="Generate Passbook Pass">
   </form>
+  <script type='text/javascript'>
   
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-12565471-1']);
+    _gaq.push(['_setDomainName', 'waldherr.eu']);
+    _gaq.push(['_trackPageview']);
+  
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = 'http://statistik.simon.waldherr.eu/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  
+  </script>
 </body>
 </html>
