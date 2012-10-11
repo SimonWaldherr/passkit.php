@@ -1,0 +1,25 @@
+{
+  "authenticationToken": "vxwxd7J8AlNNFPS8k0a0FfUFtq0ewzFdc",
+  "backgroundColor": "rgb(42, 147, 51)",
+  "barcode": {
+    "format": "PKBarcodeFormatQR",
+    "message": "https://github.com/SimonWaldherr/passkit.php",
+    "messageEncoding": "utf-8"
+  },
+  "description": "Demo Pass",
+  "foregroundColor": "rgb(251, 251, 251)",
+  "formatVersion": 1,
+  "generic": {
+    "primaryFields": [
+      {
+        "key": "url",
+        "value": "github.com/SimonWaldherr/passkit.php"
+      }
+    ]
+  },
+  "logoText": "passkit.php",
+  "organizationName": "Apple Inc",
+  "passTypeIdentifier": "pass.com.apple.demo",
+  "serialNumber": "8j23fm3",
+  "teamIdentifier": "123ABCDEFG"
+}

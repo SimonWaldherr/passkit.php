@@ -1,0 +1,101 @@
+{
+  "authenticationToken": "vxwxd7J8AlNNFPS8k0a0FfUFtq0ewzFdc",
+  "backgroundColor": "rgb(197, 31, 31)",
+  "barcode": {
+    "format": "PKBarcodeFormatPDF417",
+    "message": "123456789",
+    "messageEncoding": "iso-8859-1"
+  },
+  "description": "Membership card",
+  "foregroundColor": "rgb(255, 255, 255)",
+  "formatVersion": 1,
+  "generic": {
+    "auxiliaryFields": [
+      {
+        "key": "level",
+        "label": "LEVEL",
+        "value": "Platinum"
+      },
+      {
+        "key": "favorite",
+        "label": "FAVORITE TOY",
+        "textAlignment": "PKTextAlignmentRight",
+        "value": "Trucks"
+      }
+    ],
+    "backFields": [
+      {
+        "key": "numberStyle",
+        "label": "spelled out",
+        "numberStyle": "PKNumberStyleSpellOut",
+        "value": 200
+      },
+      {
+        "key": "loc",
+        "label": "localized to french",
+        "value": "Oh my stars."
+      },
+      {
+        "currencyCode": "BRL",
+        "key": "currency",
+        "label": "in reals",
+        "value": 200
+      },
+      {
+        "dateStyle": "PKDateStyleFull",
+        "key": "dateFull",
+        "label": "date full",
+        "value": "1980-05-07T10:00-05:00"
+      },
+      {
+        "key": "timeFull",
+        "label": "time full",
+        "timeStyle": "PKDateStyleFull",
+        "value": "1980-05-07T10:00-05:00"
+      },
+      {
+        "dateStyle": "PKDateStyleShort",
+        "key": "dateTime",
+        "label": "dateTime",
+        "timeStyle": "PKDateStyleShort",
+        "value": "1980-05-07T10:00-05:00"
+      },
+      {
+        "dateStyle": "PKDateStyleShort",
+        "isRelative": true,
+        "key": "relStyle",
+        "label": "rel style",
+        "value": "2012-04-24T10:00-05:00"
+      }
+    ],
+    "primaryFields": [
+      {
+        "key": "member",
+        "value": "Johnny Appleseed"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "subtitle",
+        "label": "MEMBER SINCE",
+        "value": "2012"
+      }
+    ]
+  },
+  "locations": [
+    {
+      "latitude": 37.6189722,
+      "longitude": -122.3748889
+    },
+    {
+      "latitude": 37.33182,
+      "longitude": -122.03118
+    }
+  ],
+  "logoText": "Toy Town",
+  "organizationName": "Apple Inc",
+  "passTypeIdentifier": "pass.com.apple.demo",
+  "serialNumber": "8j23fm3",
+  "teamIdentifier": "123ABCDEFG",
+  "webServiceURL": "https://example.tld/pass"
+}
