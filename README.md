@@ -23,10 +23,10 @@
 
 ###Example
 
-[cdn.simon.waldherr.eu/projects/passkit.php/](http://cdn.simon.waldherr.eu/projects/passkit.php/)
+[cdn.simon.waldherr.eu/projects/passkit.php/](http://cdn.simon.waldherr.eu/projects/passkit.php/)  
 
-scan this QR-Code with your iPhone to open the passkit.php example
-<img src="http://cdn.simon.waldherr.eu/projects/passkit.php/example.png" alt="cdn.simon.waldherr.eu/projects/passkit.php/"/>
+scan this QR-Code with your iPhone to open the passkit.php example  
+<img src="http://cdn.simon.waldherr.eu/projects/passkit.php/example.png" alt="cdn.simon.waldherr.eu/projects/passkit.php/"/>  
 
 ###License
 

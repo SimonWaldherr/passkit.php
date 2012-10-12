@@ -12,6 +12,7 @@ if($_POST['time'] != '')
     
     $data = array('./data/array.php',
                   './data/json.php',
+                  './data/small.php',
                   './data/coupon.json',
                   './data/event.json',
                   './data/small.json',
@@ -19,7 +20,7 @@ if($_POST['time'] != '')
     
     if(!is_numeric($_POST['aexample']))
       {
-        $example_data = rand(0,5);
+        $example_data = rand(0,6);
       }
     else
       {
@@ -27,7 +28,7 @@ if($_POST['time'] != '')
       }
     
     
-    if($example_data < 2)
+    if($example_data < 3)
       {
         include($data[$example_data]);
       }
@@ -52,6 +53,10 @@ if($_POST['time'] != '')
   <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
   <title>passkit.php demo</title>
   <style>
+    body{
+      width: 220px;
+      margin: 30px auto;
+    }
     form, input, select{
       display: block;
       font-size: 16px;
@@ -66,37 +71,44 @@ if($_POST['time'] != '')
       font-family: "Hoefler Text", Constantia, Palatino, Georgia, serif;
       margin: auto;
     }
+    #repo{
+      font-family: "Lucida Grande", "Lucida Sans Unicode", Geneva, sans-serif;
+      font-size: 7pt;
+      color: #444;
+    }
   </style>
 </head>
 <body>
   <h1>passkit.php</h1>
   <p>select a example and press the submit button to generate a pass</p>
   <form action="./" method="post">
-    <select id="aexample" name="aexample" size="6">
+    <select id="aexample" name="aexample" size="7">
       <option value="false" selected="selected">random</option>
-      <option value="0">array</option>
-      <option value="1">json</option>
-      <option value="2">coupon</option>
-      <option value="3">event</option>
-      <option value="4">small</option>
-      <option value="5">generic</option>
+      <option value="0">array (php)</option>
+      <option value="1">json (php)</option>
+      <option value="2">small (php)</option>
+      <option value="3">coupon (json)</option>
+      <option value="4">event (json)</option>
+      <option value="5">small (json)</option>
+      <option value="6">generic (json)</option>
     </select>
     <input style="display:none;" name="time" id="time" type="text" value="<?php echo time(); ?>">
     <input type="submit" value="Generate Passbook Pass">
   </form>
+  <p id="repo">the source of this software ist available at <a href="http://github.com/">GitHub</a> in the <a href="https://github.com/SimonWaldherr/passkit.php">github.com/SimonWaldherr/passkit.php repository</a>.</p>
   <script type='text/javascript'>
-  
+
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-12565471-1']);
     _gaq.push(['_setDomainName', 'waldherr.eu']);
     _gaq.push(['_trackPageview']);
-  
+
     (function() {
       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
       ga.src = 'http://statistik.simon.waldherr.eu/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
-  
+
   </script>
 </body>
 </html>
