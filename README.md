@@ -15,11 +15,19 @@
 
 ###Tested with
 
-* iPhone 4
-* iOS 6.0
-* Linux (RHEL 5)
-* Apache 2
-* PHP 5.3.13
+* Clienthardware
+	* iPhone 4
+	* iPhone 4s
+	* iPod Touch (4.Gen.)
+	* iMac
+	* MBP
+* Clientsoftware
+	* iOS 6.0
+	* Mac OS X 10.8
+* Serversoftware
+	* Linux (RHEL 5)
+	* Apache 2
+	* PHP 5.3.13
 
 ###Example
 
@@ -27,6 +35,8 @@
 
 scan this QR-Code with your iPhone to open the passkit.php example  
 <img src="http://cdn.simon.waldherr.eu/projects/passkit.php/example.png" alt="cdn.simon.waldherr.eu/projects/passkit.php/"/>  
+
+you also can "test" a few of the [example passes](https://github.com/SimonWaldherr/passkit.php/tree/master/passes) generated with passkit.php
 
 ###License
 
@@ -45,13 +55,21 @@ passkit.php v1.0
 
 ###Howto
 
-coming soon ...
+In order to get it working on your server, you have to:
+* replace the dummy ```Certificate.p12``` with your own cert
+* change the teamIdentifier in ```/data/XYZ.json``` to your own
+* change the passTypeIdentifier in ```/data/XYZ.json``` to your own
+* select a temp directory in ```index.php```
+* upload to your server
+* change permissions of your temp dir ```chmod```
+
+more details coming soon ...   
 
 ###Questions
 
 feel free to ask via:
 
-* GitHub (via Issues)
+* GitHub ([via Issues](https://github.com/SimonWaldherr/passkit.php/issues))
 * contact form ([on my page](http://simon.waldherr.eu/))
 * [eMail](mailto:contact@simonwaldherr.de)
 * Twitter [@SimonWaldherr](http://twitter.com/simonwaldherr)
