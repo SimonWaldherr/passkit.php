@@ -47,17 +47,38 @@
 </ul><h3>Tested with</h3>
 
 <ul>
+<li>Clienthardware
+
+<ul>
 <li>iPhone 4</li>
+<li>iPhone 4s</li>
+<li>iPod Touch (4.Gen.)</li>
+<li>iMac</li>
+<li>MBP</li>
+</ul>
+</li>
+<li>Clientsoftware
+
+<ul>
 <li>iOS 6.0</li>
+<li>Mac OS X 10.8</li>
+</ul>
+</li>
+<li>Serversoftware
+
+<ul>
 <li>Linux (RHEL 5)</li>
 <li>Apache 2</li>
 <li>PHP 5.3.13</li>
+</ul>
+</li>
 </ul><h3>Example</h3>
 
-<p><a href="http://cdn.simon.waldherr.eu/projects/passkit.php/">cdn.simon.waldherr.eu/projects/passkit.php/</a></p>
+<p><a href="http://cdn.simon.waldherr.eu/projects/passkit.php/">cdn.simon.waldherr.eu/projects/passkit.php/</a>  </p>
 
-<p>scan this QR-Code with your iPhone to open the passkit.php example
-<img src="http://cdn.simon.waldherr.eu/projects/passkit.php/example.png" alt="cdn.simon.waldherr.eu/projects/passkit.php/"></p>
+<p>scan this QR-Code with your iPhone to open the passkit.php example<br><img src="http://cdn.simon.waldherr.eu/projects/passkit.php/example.png" alt="cdn.simon.waldherr.eu/projects/passkit.php/"></p>
+
+<p>you also can "test" a few of the <a href="https://github.com/SimonWaldherr/passkit.php/tree/master/passes">example passes</a> generated with passkit.php</p>
 
 <h3>License</h3>
 
@@ -76,14 +97,25 @@ Copyright © 2012 Simon Waldherr  </p>
 
 <h3>Howto</h3>
 
-<p>coming soon ...</p>
+<p>In order to get it working on your server, you have to:</p>
+
+<ul>
+<li>replace the dummy <code>Certificate.p12</code> with your own cert</li>
+<li>change the teamIdentifier in <code>/data/XYZ.json</code> to your own</li>
+<li>change the passTypeIdentifier in <code>/data/XYZ.json</code> to your own</li>
+<li>select a temp directory in <code>index.php</code>
+</li>
+<li>upload to your server</li>
+<li>change permissions of your temp dir <code>chmod</code>
+</li>
+</ul><p>more details coming soon ...   </p>
 
 <h3>Questions</h3>
 
 <p>feel free to ask via:</p>
 
 <ul>
-<li>GitHub (via Issues)</li>
+<li>GitHub (<a href="https://github.com/SimonWaldherr/passkit.php/issues">via Issues</a>)</li>
 <li>contact form (<a href="http://simon.waldherr.eu/">on my page</a>)</li>
 <li><a href="mailto:contact@simonwaldherr.de">eMail</a></li>
 <li>Twitter <a href="http://twitter.com/simonwaldherr">@SimonWaldherr</a>
