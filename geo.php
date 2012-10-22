@@ -1,51 +1,16 @@
 <?php
 
-$log = print_r($_SERVER,1);
-$log .= print_r($_POST,1);
-$log .= print_r($_GET,1);
-file_put_contents('./log/'.time().'.txt', $log);
-
-if(($_POST['time'] != '')||($_GET['update'] != ''))
+if(($_GET['lat'] != '')&&($_GET['long'] != ''))
   {
     require('./passkit.php');
 
     $Certificates = array('AppleWWDRCA'  => './certs/AppleWWDRCA.pem', 
-                          'Certificate'  => './certs/Certificate.p12', 
-                          'CertPassword' => 'THE PASSWORD FOR YOUR CERTIFICATE');
-
+                         'Certificate'  => './certs/Certificate.p12', 
+                         'CertPassword' => 'THE PASSWORD FOR YOUR CERTIFICATE');
     
     $ImageFiles = array('images/icon.png', 'images/icon@2x.png', 'images/logo.png');
     
-    $data = array('./data/array.php',
-                  './data/json.php',
-                  './data/small.php',
-                  './data/coupon.json',
-                  './data/event.json',
-                  './data/small.json',
-                  './data/generic.json');
-    if($_GET['update'] != '')
-      {
-        $example_data = 4;
-      }
-    elseif(!is_numeric($_POST['aexample']))
-      {
-        $example_data = rand(0,6);
-      }
-    else
-      {
-        $example_data = $_POST['aexample'];
-      }
-    
-    
-    if($example_data < 3)
-      {
-        include($data[$example_data]);
-      }
-    else
-      {
-        $JSON = file_get_contents($data[$example_data]);
-      }
-    
+    include('./data/event.php');
     
     $TempPath = '/pages/home/htdocs/temp/';
     
@@ -89,36 +54,37 @@ if(($_POST['time'] != '')||($_GET['update'] != ''))
 </head>
 <body>
   <h1>passkit.php</h1>
-  <p>select a example and press the submit button to generate a pass</p>
-  <form action="./" method="post">
-    <select id="aexample" name="aexample" size="7">
-      <option value="false" selected="selected">random</option>
-      <option value="0">array (php)</option>
-      <option value="1">json (php)</option>
-      <option value="2">small (php)</option>
-      <option value="3">coupon (json)</option>
-      <option value="4">event (json)</option>
-      <option value="5">small (json)</option>
-      <option value="6">generic (json)</option>
-    </select>
+  <p>this is a passkit.php demo with geo information</p>
+  <p><a onclick="get_location();">insert your current location</a></p>
+  <form action="./geo.php" method="get">
+    <label for="lat">latitude</label><input name="lat" id="lat" type="text">
+    <label for="long">longitude</label><input name="long" id="long" type="text">
     <input style="display:none;" name="time" id="time" type="text" value="<?php echo time(); ?>">
     <input type="submit" value="Generate Passbook Pass">
   </form>
-  <p>if you like this demo, please try the <a href="https://ssl-id.de/cdn.simon.waldherr.eu/projects/passkit.php/geo.php">GEO Example</a>, too.</p>
   <p id="repo">the source of this software ist available at <a href="http://github.com/">GitHub</a> in the <a href="https://github.com/SimonWaldherr/passkit.php">github.com/SimonWaldherr/passkit.php repository</a>.</p>
   <script type="text/javascript">
-  
+    function get_location() {
+    navigator.geolocation.getCurrentPosition(insertLocation);
+    }
+    
+    function insertLocation(position) {
+    document.getElementById('lat').value = position.coords.latitude;
+    document.getElementById('long').value = position.coords.longitude;
+    }
+
+    
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-12565471-1']);
     _gaq.push(['_setDomainName', 'waldherr.eu']);
     _gaq.push(['_trackPageview']);
-  
+    
     (function() {
       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
-  
+
   </script>
 </body>
 </html>
