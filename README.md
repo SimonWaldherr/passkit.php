@@ -9,9 +9,13 @@
 
 ###Requirements
 
-* PHP 5 >= 5.2.2
-* Access to filesystem
-* iOS Developer Account
+* Clientside
+	* iOS 6.0
+	* Mac OS X 10.8
+* Serverside
+	* PHP 5 >= 5.2.2
+	* Access to filesystem
+	* iOS Developer Account
 
 ###Tested with
 
