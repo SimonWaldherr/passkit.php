@@ -10,28 +10,35 @@
 ###Requirements
 
 * Clientside
-	* iOS 6.0
-	* Mac OS X 10.8
+	* iOS > 6.0
+	* Mac OS X > 10.8
 * Serverside
 	* PHP 5 >= 5.2.2
 	* Access to filesystem
-	* iOS Developer Account
+* Other
+	* [iOS Developer Account](https://developer.apple.com/devcenter/ios/index.action) (99$/Year)
 
 ###Tested with
 
 * Clienthardware
 	* iPhone 4
 	* iPhone 4s
+	* iPhone 5s
 	* iPod Touch (4.Gen.)
 	* iMac
 	* MBP
 * Clientsoftware
 	* iOS 6.0
+	* iOS 7.0.3
 	* Mac OS X 10.8
+	* Mac OS X 10.9
 * Serversoftware
 	* Linux (RHEL 5)
+	* Linux (Debian 7)
+	* Solaris (11.1)
 	* Apache 2
 	* PHP 5.3.13
+	* PHP 5.5.5
 
 ###Example
 
