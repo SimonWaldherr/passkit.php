@@ -26,12 +26,17 @@
 	* iMac
 	* MBP
 * Clientsoftware
-	* iOS 6.0
+	* iOS 6.x
+	* iOS 7.0
+	* iOS 7.1
 	* Mac OS X 10.8
+	* Mac OS X 10.9
 * Serversoftware
 	* Linux (RHEL 5)
+	* Linux (Debian 7)
 	* Apache 2
 	* PHP 5.3.13
+	* PHP 5.4.4
 
 ###Example
 
@@ -45,7 +50,7 @@ you also can "test" a few of the [example passes](https://github.com/SimonWaldhe
 ###License
 
 The MIT License  
-Copyright © 2012 Simon Waldherr  
+Copyright © 2014 Simon Waldherr  
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
