@@ -1,7 +1,9 @@
 #passkit.php
 ##a php function to create passes for Apple Passbook
 
-[![Gittip donate button](http://img.shields.io/gittip/bevry.png)](https://www.gittip.com/SimonWaldherr/ "Donate weekly to this project using Gittip") [![Flattr donate button](https://raw.github.com/balupton/flattr-buttons/master/badge-89x18.gif)](https://flattr.com/submit/auto?user_id=SimonWaldherr&url=http%3A%2F%2Fgithub.com%2FSimonWaldherr%2Fpasskit.php "Donate monthly to this project using Flattr")
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+[![Flattr donate button](https://raw.github.com/balupton/flattr-buttons/master/badge-89x18.gif)](https://flattr.com/submit/auto?user_id=SimonWaldherr&url=http%3A%2F%2Fgithub.com%2FSimonWaldherr%2Fpasskit.php "Donate monthly to this project using Flattr")
+[![PayPal donate button](https://img.shields.io/badge/donate%20via-paypal-blue.svg)](https://www.paypal.me/SimonWaldherr "Donate to this project via PayPal.me")  
 
 ###Info material
 
@@ -44,15 +46,6 @@
 	* PHP 5.3.13
 	* PHP 5.4.4
 	* PHP 5.5.5
-
-###Example
-
-[cdn.simon.waldherr.eu/projects/passkit.php/](http://cdn.simon.waldherr.eu/projects/passkit.php/)  
-
-scan this QR-Code with your iPhone to open the passkit.php example  
-<img src="http://cdn.simon.waldherr.eu/projects/passkit.php/example.png" alt="cdn.simon.waldherr.eu/projects/passkit.php/"/>  
-
-you also can "test" a few of the [example passes](https://github.com/SimonWaldherr/passkit.php/tree/master/passes) generated with passkit.php
 
 ###License
 
